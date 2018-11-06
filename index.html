@@ -324,8 +324,11 @@
 <li>冒泡阶段：从目标阶段冒泡到document节点</li>
 </ul>
 </li>
-<li><p>事件的执行顺序</p>
-</li>
+</ol>
+<p>关于这三个阶段的流程，文档上有个图片，描述的十分详细</p>
+<p><img src="https://www.w3.org/TR/DOM-Level-3-Events/images/eventflow.svg" alt="eventflow"></p>
+<ol start="3">
+<li>事件的执行顺序</li>
 </ol>
 <p>对于target来说，事件执行，一直会在目标阶段。但对于整个事件流上的别的元素来说，执行顺序还会受到另外一个因素的影响。</p>
 <p>我们来看一个例子，首先dom结构如下<br><figure class="highlight html"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line"><span class="tag">&lt;<span class="name">div</span> <span class="attr">id</span>=<span class="string">"fa"</span>&gt;</span></span><br><span class="line">	<span class="tag">&lt;<span class="name">div</span> <span class="attr">id</span>=<span class="string">"ch"</span>&gt;</span><span class="tag">&lt;/<span class="name">div</span>&gt;</span></span><br><span class="line"><span class="tag">&lt;/<span class="name">div</span>&gt;</span></span><br></pre></td></tr></table></figure></p>
